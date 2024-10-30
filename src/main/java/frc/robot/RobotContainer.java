@@ -11,7 +11,6 @@ import frc.robot.commands.ClimberStop;
  import frc.robot.commands.ClimberUp;
 import frc.robot.commands.CloseLeftAuto;
 import frc.robot.commands.PivotHoldCommand;
-import frc.robot.commands.PodiumAlignment;
 import frc.robot.commands.ShootCommand;
 import frc.robot.commands.ShootStayLeftAuto;
 import frc.robot.commands.ShootStayMidAuto;
@@ -40,7 +39,6 @@ import frc.robot.subsystems.ExampleSubsystem;
 import frc.robot.commands.Drive;
 import frc.robot.commands.PickAndLeaveAmpAuto;
 import frc.robot.subsystems.SwerveDrive;
-import frc.robot.subsystems.VisionSubsystem;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.InstantCommand;
@@ -104,7 +102,6 @@ public class RobotContainer {
   public final Shooter noteShooter = new Shooter();
   public final Pivot shooterPivot = new Pivot();
   public final Climber climb = new Climber();
-  public final VisionSubsystem camera = new VisionSubsystem();
   
   
    
