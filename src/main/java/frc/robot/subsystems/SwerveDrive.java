@@ -28,6 +28,7 @@ public class SwerveDrive extends SubsystemBase {
   /** Creates a new SwerveDrive. */
   private SwerveDriveOdometry odometry;
   private Field2d field;
+  private double yaw;
   private final SwerveModule[] dt;
   private final PigeonIMU gyro = new PigeonIMU(10);
   public final PIDController alignPID = new PIDController(Constants.alignkP, 0, 0);
@@ -35,6 +36,7 @@ public class SwerveDrive extends SubsystemBase {
 
   private final Joystick driverL;
   private final Joystick driverR;
+
 
   // dt is DriveTrain
   public SwerveDrive(Joystick driverL, Joystick driverR) {
@@ -136,10 +138,14 @@ public class SwerveDrive extends SubsystemBase {
   }
 
   public Rotation2d getYaw() {
+    
+    yaw = gyro.getYaw() + Constants.gyro_offset;
 
-    return (false)
-        ? Rotation2d.fromDegrees(360 - gyro.getYaw())
-        : Rotation2d.fromDegrees(gyro.getYaw());
+    while (yaw > 360) {
+      yaw = yaw - 360;
+    }
+    return Rotation2d.fromDegrees(yaw);
+
   }
 
   @Override
