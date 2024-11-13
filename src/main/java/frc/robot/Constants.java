@@ -67,18 +67,18 @@ public final class Constants {
 
   //module 3 constants: Front Left    Module 0???                //MG    //PC
 
-   //module 20
-  public static final int mod0DriveMotor = 54;        //37 //59    //10
-  public static final int mod0TurningMotor = 58;      //60  //55    //11
-  public static final int mod0CANCoder = 5;           //3   //2
-  public static final Rotation2d mod0TurningOffset = Rotation2d.fromDegrees(67.3); //148.2
+   //module 20 -> 21 ->23
+  public static final int mod0DriveMotor = 59;  //36  //54    //37 //59    //10
+  public static final int mod0TurningMotor = 55; //52  //58   //60  //55    //11
+  public static final int mod0CANCoder = 7;    //6 //5      //3   //2
+  public static final Rotation2d mod0TurningOffset = Rotation2d.fromDegrees(226.0);//271.2//67.3 //148.2
 
-  //module 21
+  //module 21 -> 23 -> 20
   //module 0 constants: Front Right Module 1????
-  public static final int mod1DriveMotor = 36;    //39   //58    //9
-  public static final int mod1TurningMotor = 52;  //32     //54    //8
-  public static final int mod1CANCoder = 6;      //1  //0       //0
-  public static final Rotation2d mod1TurningOffset = Rotation2d.fromDegrees(271.2); //97.3
+  public static final int mod1DriveMotor = 54; //59 //36  //39   //58    //9
+  public static final int mod1TurningMotor = 58;//5 //52 //32     //54    //8
+  public static final int mod1CANCoder = 5;  //7  //6  //1  //0       //0
+  public static final Rotation2d mod1TurningOffset = Rotation2d.fromDegrees(67.3);//226.0 //271.2 //97.3
 
   //mod22
   //module 2 constants: Back Left
@@ -88,12 +88,12 @@ public final class Constants {
   public static final Rotation2d mod2TurningOffset = Rotation2d.fromDegrees(103.8);  //166.1
 
 
-  //mod23
+  //mod23 -> 20 ->21
   //module 1 constants: Back Right mod 3???
-  public static final int mod3DriveMotor = 59;     //42  //36    //9
-  public static final int mod3TurningMotor = 55;    //31   //52    //8
-  public static final int mod3CANCoder = 7;   //8    //1       //3
-  public static final Rotation2d mod3TurningOffset = Rotation2d.fromDegrees(226.0); //156.8
+  public static final int mod3DriveMotor = 36; //54 //59   //42  //36    //9
+  public static final int mod3TurningMotor = 52;  //58 //55 //31   //52    //8
+  public static final int mod3CANCoder = 6; //5 //7 //8    //1       //3
+  public static final Rotation2d mod3TurningOffset = Rotation2d.fromDegrees(271.2); //67.3  //226.0 //156.8
 
 
   //PID Constants
