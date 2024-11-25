@@ -131,8 +131,8 @@ public final class Constants {
 
 
   //Lengths of the drivetrain, as well as the map of where the wheels are on the robot (like coordinates)
-  public static final double robotLength = Units.inchesToMeters(20.381); //23.625? or .675?
-  public static final double robotWidth = Units.inchesToMeters(20.381);
+  public static final double robotLength = Units.inchesToMeters(23); //23.625? or .675?
+  public static final double robotWidth = Units.inchesToMeters(23);
 
 /* 
   public static final double robotLength = Units.inchesToMeters(23.675); 
